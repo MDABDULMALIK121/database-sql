@@ -1,0 +1,34 @@
+
+select*from employees;
+select ascii('A');
+select char(65);
+
+select charindex('a','ramayan');
+select left('ramayan',3);
+select right('ramayan',3);
+select substring('ramayan',3,4);
+
+select len('deepak');
+
+select lower('RAKESH');
+select upper('rakesh');
+
+select len(Itrim(' mohit'));
+select len(rtrim('mohit '));
+
+select REPLACE('data','a','p');
+
+select replicate('m',20);
+
+select REVERSE('amit');
+
+select first_name from employees;
+
+declare @name varchar(100)
+set @name='rakesh'
+select
+UPPER(left(@name,1))+SUBSTRING(@name,2,len(@name));
+
+select*from employees where salary>12000;
+
+
